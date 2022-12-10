@@ -1,0 +1,61 @@
+<resources>
+    <string name="app_name">Pokedex</string>
+    <string name="title_activity_login">Login</string>
+
+    <!-- Strings used for bottom navigation -->
+    <string name="regions_menu">Regions</string>
+    <string name="teams_menu">Teams</string>
+
+    <!-- Strings related to login-->
+    <string name="login_button" translatable="false">Login</string>
+    <string name="login_ti_email">Email</string>
+    <string name="login_ti_password">Password</string>
+
+    <!-- Strings related to facebook-->
+    <string name="facebook_app_id" translatable="false">658106535957652</string>
+    <string name="fb_login_protocol_scheme" translatable="false">fb951361852132947</string>
+    <string name="facebook_client_token" translatable="false">9ce8986b58a2a146aad2eebe36b1c5b0</string>
+    <string name="facebook_auth_error">Authentication failed.</string>
+
+    <!-- Strings related to Pokedex fragment -->
+    <string name="help_teams_message">Select 3 to 6 and click here to create its team</string>
+    <string name="create_team">Create Team</string>
+    <string name="pokedex_fragment_text">Choose a Pokedex to proceed</string>
+
+    <!-- Strings related to Create Teams fragment-->
+    <string name="create_teams_header">Create Your Team</string>
+    <string name="create_teams_descriptions">Create your team with the Pokedex you selected before</string>
+    <string name="create_teams_name_hint">Name</string>
+    <string name="create_teams_number_hint">Number</string>
+    <string name="create_teams_type_hint">Type</string>
+    <string name="create_teams_button">Create</string>
+
+    <!-- Strings related to Teams details fragment -->
+    <string name="teams_details_fragment_tv_title">Modify or delete your team</string>
+    <string name="teams_details_fragment_tf_name">Team name</string>
+    <string name="teams_details_fragment_tf_number">Team number</string>
+    <string name="teams_details_fragment_tf_type">Team type</string>
+    <string name="teams_details_fragment_button">Save changes</string>
+
+    <!-- Strings related to Pokemon choose item -->
+    <string name="pokemon_choose_item_button">Add</string>
+
+    <!-- Strings related to Regions fragment -->
+    <string name="regions_fragment_header">Choose a Region to proceed</string>
+
+    <!-- Strings related to Pokedex item -->
+    <string name="pokedex_item_button">Choose</string>
+    <string name="pokedex_number">Pokedex Number %1$s</string>
+    <string name="pokedex_title_rv">Team Pokemons</string>
+
+    <!--Strings related to Teams Adapter -->
+    <string name="teams_adapter_no_description_msg">No description available</string>
+
+    <!-- Strings related to Teams fragment -->
+    <string name="teams_fragment_header">Click on any item to expand it</string>
+    <string name="teams_fragment_empty_state">Create a Team to see it here!</string>
+
+    <!-- Strings related to error layout -->
+    <string name="error_layout_error_tv_message">There was an error getting the data</string>
+    <string name="error_layout_error_bt_retry">Reload</string>
+</resources>
