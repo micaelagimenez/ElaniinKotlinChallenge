@@ -57,6 +57,8 @@ class TeamsFragment : Fragment() {
         val options: FirebaseRecyclerOptions<Team> = FirebaseRecyclerOptions.Builder<Team>()
             .setQuery(database!!, Team::class.java)
             .build()
+        teamsAdapter = TeamsAdapter(onClickHandler, options)
+        binding.rvTeams.adapter = teamsAdapter
 
         // Check if there is any data in DB, show message if there is not
         database!!.addValueEventListener(object : ValueEventListener {
@@ -68,13 +70,12 @@ class TeamsFragment : Fragment() {
                 } else {
                     binding.progressBar.isVisible = true
                 }
+                teamsAdapter.notifyDataSetChanged()
             }
             override fun onCancelled(databaseError: DatabaseError) {
                 throw databaseError.toException()
             }
         })
-        teamsAdapter = TeamsAdapter(onClickHandler, options)
-        binding.rvTeams.adapter = teamsAdapter
     }
 
 

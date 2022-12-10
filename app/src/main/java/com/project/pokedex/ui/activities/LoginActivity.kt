@@ -90,9 +90,9 @@ class LoginActivity : AppCompatActivity() {
             override fun onSuccess(result: LoginResult) {
                 Log.d(TAG, "facebook:onSuccess:$result")
                 handleFacebookAccessToken(result.accessToken)
+                finish()
                 // start Main activity
                 startActivity(Intent(applicationContext, MainActivity::class.java))
-                finish()
             }
 
             override fun onCancel() {
@@ -115,7 +115,8 @@ class LoginActivity : AppCompatActivity() {
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
-        super.onActivityResult(requestCode, resultCode, data);
+        super.onActivityResult(requestCode, resultCode, data)
+        callbackManager.onActivityResult(requestCode, resultCode, data)
         if (requestCode == 1) {
             val task = GoogleSignIn.getSignedInAccountFromIntent(data)
             try {
